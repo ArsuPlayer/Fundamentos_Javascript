@@ -4,7 +4,7 @@ console.log("conexión con js establecida...")
  Solicita la edad del usuario mediante prompt().
 Muestra con alert() si puede votar (18 años o más) o no.
 */
-// 3. Suficiente edad para votar
+// 1. Suficiente edad para votar
 function edadVotar() {
     let edad = parseInt(prompt("Ingrese su Edad: "));
     //Input conversión string a número
@@ -18,7 +18,7 @@ function edadVotar() {
         alert("Ingrese un valor válido.");
     }
 }
-// 3. Validar Contraseña xd
+// 2. Validar Contraseña xd
 function validarContrasena() {
     let clave = prompt("Ingresa tu contraseña:");
     if (clave == "1234") {
