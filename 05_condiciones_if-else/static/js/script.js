@@ -1,10 +1,7 @@
 // Ejercicios Condiciones IF - ELSE
 console.log("Conexión con js establecida...");
 
-/* Edad para votar
-Solicita la edad del usuario mediante prompt().
-Muestra con alert() si puede votar
-(18 años o más) o no.
+/* Edad para votar (18 años o más)
 */
 function edadVotar() {
   let edad = parseInt(prompt("Ingrese su Edad: "));
@@ -13,7 +10,6 @@ function edadVotar() {
   if (edad >= 18) {
     alert("Su edad " + edad + " aprobada para votar.");
   } else if (edad >= 0 && edad < 18) {
-    //&& compuerta AND
     alert("Su edad " + edad + "no esta aprobada para votar.");
   } else {
     alert("Ingrese un valor válido");
@@ -54,8 +50,7 @@ function parImpar() {
 /*
 Temperatura ambiental
 Solicita la temperatura actual. Si es mayor o
-igual a 30, muestra “Hace calor”, de lo contrario
-muestra “Clima agradable”.
+igual a 30 muestra “Hace calor”
 */
 function temperaturaAmbiental() {
   let temperatura = parseInt(prompt("Ingresar Temperatura"));
@@ -72,9 +67,7 @@ function temperaturaAmbiental() {
 
 /*Comparar dos números
  Solicita dos números al usuario.
-  Compara ambos y muestra cuál es mayor o si son iguales.
-
-
+Compara ambos y muestra cuál es mayor o si son iguales.
  */
 
 function compararNumeros() {
@@ -83,31 +76,31 @@ function compararNumeros() {
   if (num1 < num2) {
     alert("el numero " + num1 + " es menor que " + num2);
   }
-  else if(num1 == num2){
+  else if (num1 == num2) {
     alert("el numero " + num1 + " es igual que " + num2);
   }
-  else{
+  else {
     alert("el numero " + num1 + " es mayor que " + num2);
   }
 }
-/* Calificación escolar: Pide una nota entre 1 y 7. Si
-es 4 o más, muestra “Aprobado”, si es menor, muestra “Reprobado”. */
+/* Pide una nota entre 1 y 7. Si
+es 4 o más, muestra “Aprobado”, si es menor, muestra “Reprobado” */
 
-function note(){
+function note() {
   let ingresa = parseInt(prompt("ingresa tu nota:"));
 
-  if (ingresa < 4){
+  if (ingresa < 4) {
     alert("desaprobado");
-  } else if (ingresa >= 4 && ingresa <=7){
+  } else if (ingresa >= 4 && ingresa <= 7) {
     alert("aprobado");
   } else {
-    alert ("por favor, ingresar valor valido");
+    alert("por favor, ingresar valor valido");
   }
 };
 
 // Pide un nombre de usuario. Si el valor ingresado es "admin", muestra “Bienvenido, administrador”. Si no, muestra “Usuario no reconocido”.
 
-function usuarioAdmin(){
+function usuarioAdmin() {
   let usu = prompt("Ingrese usuario")
   if (usu == "admin") {
     alert("Bienvenido, Administrador")
@@ -116,11 +109,11 @@ function usuarioAdmin(){
   }
 }
 
-//  Pide una palabra al usuario. Verifica si empieza con la letra “A” mayúscula y muestra un mensaje acorde.
+//  Pide una palabra al usuario. Verifica si empieza con la letra “A” y muestra un mensaje acorde.
 
-function palabraMayuscula(){
+function palabraMayuscula() {
   let letra = prompt("Ingresa palabra");
-  let letraA = "A" ;
+  let letraA = "A";
   if (letra[0] == letraA) {
     alert("la palabra comienza con a mayuscula");
   } else {
@@ -128,18 +121,37 @@ function palabraMayuscula(){
   }
 }
 
-function precio(){ // Creación de la función
+function precio() { // Creación de la función
   //Añadir un porcentaje de descuento e IVA y mostrar.
   let iva = 0.19;
   let descuento = parseFloat(prompt("Ingrese el valor de descuento: Ejemplo 20"));
   descuento /= 100; // operación para llevar a decimal
   let precio = parseFloat(prompt("Ingrese el precio del producto"));
-  if (precio > 10000){
+  if (precio > 10000) {
     alert(`El valor ingresado fue: ${precio}\n
           IVA: ${precio * iva}\n
           Precio Total:${precio * 1.19}\n
           `);
   } else {
     alert("Precio normal");
+  }
+}
+
+function licenciaEdad() {
+  let edad = parseInt(prompt("Ingrese su Edad: "));
+  if (edad >= 18 && edad < 100) {
+    let licencia = prompt("Indica si tienes licencia si/no");
+    if (licencia == "si") {
+      alert("Usted puede conducir!");
+    } else if (licencia == "no") {
+      alert("Usted no puede conducir!")
+    } else {
+      alert("Ingrese valores válidos!")
+    }
+  } else {
+    alert("Ingrese valores válidos!");
+
+
+
   }
 }
