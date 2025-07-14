@@ -1,0 +1,20 @@
+button{
+    padding: 0 auto;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border-color: #000000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+body{
+    background-color: #536fbd;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+h1{
+    color: #ffffff;
+}
+p{
+    color: #a0deff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

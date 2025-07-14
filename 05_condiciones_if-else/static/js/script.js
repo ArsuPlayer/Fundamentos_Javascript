@@ -150,8 +150,5 @@ function licenciaEdad() {
     }
   } else {
     alert("Ingrese valores válidos!");
-
-
-
   }
 }
