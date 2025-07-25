@@ -2,7 +2,7 @@
 
 function longitudPalabra() {
   let pal1 = prompt("Ingrese primera palabra");
-  let pal2 = prompt / ("Ingrese segunda palabra");
+  let pal2 = prompt("Ingrese segunda palabra");
   if (pal1 == "" && pal2 == "") {
     alert("Ingrese algún valor para trabajar...")
   } if (pal1.length < pal2.length) {
@@ -14,3 +14,23 @@ function longitudPalabra() {
     alert(`La palabra más larga es ${pal1} con ${pal1.length} carácteres`)
   }
 }
+
+function validarCorreo() {
+  let correo = prompt("Ingrese su correo:");
+  if (correo.includes("@")) {
+    alert(`El correo ${correo} es válido.`);
+  } else {
+    alert(`El correo ${correo} es inválido.`);
+  }
+}
+function verificarNumero() {
+let numero = prompt("Ingrese su número:");
+if(numero >= 0){
+  alert(`El número ${numero} es positivo`);
+} else{
+   alert(`El número ${numero} es negativo`);
+}
+
+
+}
+
