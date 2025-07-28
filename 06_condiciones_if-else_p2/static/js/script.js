@@ -1,5 +1,7 @@
 // Ejercicios Condiciones IF - ELSE
 
+const { act } = require("react");
+
 function longitudPalabra() {
   let pal1 = prompt("Ingrese primera palabra");
   let pal2 = prompt("Ingrese segunda palabra");
@@ -24,13 +26,18 @@ function validarCorreo() {
   }
 }
 function verificarNumero() {
-let numero = prompt("Ingrese su número:");
-if(numero >= 0){
-  alert(`El número ${numero} es positivo`);
-} else{
-   alert(`El número ${numero} es negativo`);
+  let numero = parseInt(prompt("Ingrese su número:"));
+  if (numero >= 0) {
+    alert(`El número ${numero} es positivo`);
+  } else {
+    alert(`El número ${numero} es negativo`);
+  }
+}
+// Saludo personalizado según hora
+function saludoHora(){
+  let=horaActual = parseInt(prompt("Ingresar hora"));
+  if(horaActual)
 }
 
 
-}
 

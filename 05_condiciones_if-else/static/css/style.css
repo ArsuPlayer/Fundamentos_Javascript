@@ -1,20 +1,45 @@
-button{
-    padding: 0 auto;
-    background-color: #ffffff;
-    border-radius: 20px;
-    border-color: #000000;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-body{
-    background-color: #536fbd;
+
+body {
+    background-color: #ce6426;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
 }
-h1{
+
+.container{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.row {
+
+    padding-top: 30px;
+    color: #ffffff;   
+}
+
+h1 {
+    font-size: 50px;
     color: #ffffff;
 }
-p{
-    color: #a0deff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+p {
+    color: #ffffff;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+button {
+    background-color: #ffffff;
+    border-width: 10px;
+    border-radius: 15px;
+    margin: 20px;
+    border-color: #c90000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    
 }
