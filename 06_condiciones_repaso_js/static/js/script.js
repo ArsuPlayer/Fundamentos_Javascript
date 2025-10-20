@@ -1,12 +1,11 @@
 console.log("conexión correcta")
 
 /*
-Edad y etapa de vida
+1️⃣ Edad y etapa de vida
 Pide la edad de una persona.
 Si es menor a 13 → “Eres un niño”.
 Si tiene entre 13 y 17 → “Eres adolescente”.
 Si tiene 18 o más → “Eres adulto”.
-Práctica: uso de rangos con if, else if, else.
 */
 
 function verificarEtapa() {
@@ -18,14 +17,13 @@ function verificarEtapa() {
     } else {
         alert("Eres un Adulto!")
     }
-}
+};
 
 /*
-Validar contraseña exacta
+2️⃣ Validar contraseña exacta
 Pide una contraseña.
 Si el texto ingresado es exactamente "12345", muestra “Acceso permitido”.
 Si no, muestra “Acceso denegado”.
-Práctica: comparación exacta (===).
 */
 function validarContraseña() {
     let contraseña = prompt("Ingrese su contraseña");
@@ -34,15 +32,13 @@ function validarContraseña() {
     } else {
         alert("Acceso Denegado!")
     }
-}
+};
 
 /*
-Verificar letra en palabra
+3️⃣ Verificar letra en palabra
 Pide una palabra.
 Si contiene la letra “e” (mayúscula o minúscula) → “La palabra contiene la letra E”.
 Si no → “No contiene la letra E”.
-💡 Usa:
-if (palabra.toLowerCase().includes('e')) { ... }
 */
 function verificarPalabra() {
     let palabra = prompt("Ingrese una palabra:");
@@ -51,14 +47,14 @@ function verificarPalabra() {
     } else {
         alert("No contiene la letra E")
     }
-}
+};
 
 /*
+4️⃣ Comparar dos números
 Pide dos números con prompt().
 Si el primero es mayor → “El primer número es mayor”.
 Si el segundo es mayor → “El segundo número es mayor”.
 Si son iguales → “Son iguales”.
-📘 Práctica: comparaciones dobles.
 */
 function compararNumero() {
     let numero1 = parseInt(prompt("Ingresa un número"));
@@ -72,4 +68,104 @@ function compararNumero() {
     } else {
         alert("Ingresa los números correctamente")
     }
-}
+};
+
+/*5️⃣ Determinar si el número es par o impar
+Pide un número.
+Si el resto al dividir por 2 (% 2) es 0 → “Número par”.
+Si no → “Número impar”.
+📘 Práctica: uso del operador módulo %.
+*/
+function parImpar() {
+    let par = parseInt(prompt("Ingrese un número: "));
+    if (par % 2 == 0) {
+        alert("Es par")
+    } else {
+        alert("Es impar")
+    }
+};
+
+/*
+6️⃣ Revisar palabra inicial
+Pide una palabra.
+Si empieza con la letra “A” o “a” → “Empieza con A”.
+Si no → “No empieza con A”.
+💡 Puedes usar:
+if (palabra[0].toLowerCase() === 'a') { ... }
+*/
+function pedirPalabra() {
+    let pedir = prompt("Ingrese una palabra: ");
+    if (pedir[0].toLowerCase().includes('a')) {
+        alert("Su palabra comienza con la letra a ")
+    } else {
+        alert("Su palabra no empieza con a ")
+    }
+};
+
+/*
+7️⃣ Temperatura ambiente
+Pide una temperatura.
+Si es menor a 10 → “Hace frío”.
+Si es entre 10 y 25 → “Clima templado”.
+Si es mayor o igual a 26 → “Hace calor”.
+📘 Práctica: comparaciones encadenadas.
+*/
+function temperaturaAmbiente() {
+    let temperatura = parseInt(prompt("Ingrese la temperatura: "));
+    if (temperatura < 10) {
+        alert("Hace frío")
+    } else if (temperatura >= 10 && temperatura <= 25) {
+        alert("Clima templado")
+    } else if (temperatura >= 26) {
+        alert("Hace calor")
+    } else {
+        alert("Error")
+    }
+};
+
+/*
+8️⃣ Nombre reconocido
+Pide un nombre.
+Si el nombre es “Dany” → “Hola, profesor 👋”.
+Si el nombre es “Ely” → “Hola, mamá 🌷”.
+En cualquier otro caso → “Hola, visitante”.
+*/
+function pedirNombre() {
+    let nombre = prompt("Ingrese un nombre: ");
+    if (nombre.toLowerCase() == "dany") {
+        alert("Hola, profesor 👋")
+    } else if (nombre.toLowerCase() == "ely") {
+        alert("Hola, mamá 🌷")
+    } else {
+        alert("Hola, visitante")
+    }
+};
+
+/*
+9️⃣ Nota de evaluación
+Pide una nota entre 1 y 7.
+Si es 4 o más → “Aprobado”.
+Si es menor que 4 → “Reprobado”.
+Si está fuera del rango 1–7 → “Nota inválida”.
+*/
+function notaEvaluacion() {
+    let nota = parseFloat(prompt("Ingrese una nota entre 1 y 7: "))
+    if (nota <= 3.9) {
+        alert("Reprobado")
+    } else if (nota >= 4.0 && nota <= 7.0) {
+        alert("Aprobado")
+    } else {
+        alert("Nota inválida")
+    }
+};
+
+/*
+🔟 Verificar si contiene una palabra clave
+Pide una frase.
+Si incluye la palabra “Jesús” (mayúscula o minúscula) → “Tu frase tiene la palabra clave 🙌”.
+Si no → “No contiene la palabra clave”.
+*/
+function palabraClave() {
+    let frase = prompt("Escribe una frase: ")
+    if (frase.toLowerCase().includes("jesús"));
+    }
