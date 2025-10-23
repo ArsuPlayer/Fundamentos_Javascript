@@ -31,13 +31,13 @@ function ejecutarFor() {
 1️⃣ Imprimir del 1 a n (n es ingresado por teclado).
 */
 function ejecutarIngreso() {
-    let resultado =  "Contamos:"
+    let resultado = "Contamos:"
     let n = parseInt(prompt("Ingresa un número: "));
-        let count = 1;
-    while (count <= n){
+    let count = 1;
+    while (count <= n) {
         resultado += ` ${count}`
         console.log(count)
-        count ++;
+        count++;
     }
     alert(resultado)
 
@@ -46,9 +46,50 @@ function ejecutarIngreso() {
 /*
 2️⃣ Cuenta regresiva del n al 1
 */
-function cuentaRegresiva(){
-    let resultado = "Conteo:"
+function cuentaRegresiva() {
+    let count = parseInt(prompt("Ingresa un numero: "));
+    let resultado = "Conteo: ";
+
+    while (count > 0) {
+        resultado += ` ${count}`;
+        console.log(count);
+        count--;
+    };
+    alert(resultado)
 }
 
+/*
+3️⃣ Sumar los n primeros números
+*/
+function sumarConsec() {
+    let suma = 0;
+    let numero = parseInt(prompt("Ingresa un número: "));
+    let count = 1;
+    let resultado = "Suma: ";
+    while (count <= numero) {
+        suma += count;
+        resultado += ` ${count}`;
+        count++
+    }
+    alert(` ${resultado} = ${suma}`)
+}
+
+/*
+4️⃣ Imprimir múltiplos de 2 del 1 al n
+*/
+function imprimirNumeros() {
+    let resultado = "El resultado es: ";
+    let count = 1;
+    let numero = parseInt(prompt("Ingresar número:"))
+
+    while (count <= numero) {
+        let modulo = count % 2;
+        if (modulo == 0) {
+            resultado += ` ${count}`
+        };
+        count++;
+    }
+    alert(resultado)
+}
 
 
