@@ -92,4 +92,75 @@ function imprimirNumeros() {
     alert(resultado)
 }
 
+/*
+5️⃣ Tabla de multiplicar
+*/
+function tablaMulti() {
+    let num = parseInt(prompt("Ingrese un número: "))
+    let tabla = `Tabla de ${num}: `;
+    //Inicio de bucle for
+    for (let i = 1; i <= 10; i++) {
+        tabla += `\n ${num} x ${i} = ${num * i}`
 
+    }
+    alert(tabla);
+}
+
+/*
+6️⃣ Números pares hasta n
+*/
+function numerosPares() {
+    let num = parseInt(prompt("Ingresa un número: "));
+    let resultado = ` los numeros pares de ${num} son: `;
+
+    for (let i = 1; i <= num; i++) {
+        if (i % 2 == 0) {
+            resultado += ` ${i}`
+        }
+    }
+    alert(resultado);
+}
+
+/*
+7️⃣ Contar letras de una palabra
+*/
+function contarLetras() {
+    let word = prompt("Dime una palabra");
+    let result = "La palabra tiene: "
+    for (let i = 1; i <= word.length; i++) {
+        result += ` ${i}`
+
+    }
+    alert(`${result} letras.`)
+}
+
+/*
+8️⃣Calcular factorial
+*/
+function calculoFactorial() {
+    let numero = parseInt(prompt("Ingrese un número para calcular su factor:"));
+    let factorial = 1
+    let largo = " ";
+    for (let i = 2; i <= numero; i++) {
+        largo += `${i} *`
+        factorial *= i;
+    }
+    alert(`El factorial de ${numero} es : ${largo} = ${factorial}`)
+}
+
+/*
+9️⃣Suma de números impares hasta n
+*/
+function sumaPar() {
+    let numero = parseInt(prompt("Ingresa número: "));
+    let respuesta = 0;
+    let largoImpar = "1"
+    for (let i = 2; i <= numero; i++) {
+        if (i % 2 != 0) {
+            respuesta += i
+            largoImpar += ` +${i}`
+        }
+    }
+    respuesta += 1
+    alert(`La suma de ${largoImpar} = ${respuesta}`)
+}
