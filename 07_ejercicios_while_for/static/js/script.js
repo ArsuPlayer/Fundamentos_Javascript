@@ -101,7 +101,7 @@ function tablaMulti() {
     //Inicio de bucle for
     for (let i = 1; i <= 10; i++) {
         tabla += `\n ${num} x ${i} = ${num * i}`
-
+        console.log(tabla)
     }
     alert(tabla);
 }
@@ -116,6 +116,7 @@ function numerosPares() {
     for (let i = 1; i <= num; i++) {
         if (i % 2 == 0) {
             resultado += ` ${i}`
+            console.log(resultado)
         }
     }
     alert(resultado);
@@ -129,7 +130,7 @@ function contarLetras() {
     let result = "La palabra tiene: "
     for (let i = 1; i <= word.length; i++) {
         result += ` ${i}`
-
+        console.log(result)
     }
     alert(`${result} letras.`)
 }
